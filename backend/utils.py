@@ -141,45 +141,59 @@ import numpy as np
 # Load the model and encoders only once
 model = joblib.load("models/hairstyle_model.pkl")
 le_dict = joblib.load("models/label_encoders.pkl")
+def get_gender_compatible_style(predicted_style, gender, style_type, le_dict):
+    import random
+    # Decode style name
+    style_name = le_dict[style_type].inverse_transform([predicted_style])[random.randint(0, 6)]
 
-def predict_hairstyles(user_info):
-    """
-    Predict classic and trendy hairstyles from user info.
+    # Define a mapping of styles per gender if available
+    gendered_styles = {
+        'male': ['crew cut', 'caesar cut', 'taper cut', 'flat top', 'faux hawk', 'slicked back undercut', 'man bun', 'wavy man bun'],
+        'female': ['classic bob', 'pixie cut', 'messy layers', 'blunt bangs', 'curtain bangs', 'layered bob', 'braided updo', 'french braid']
+    }
 
-    Parameters:
-        user_info (dict): Dictionary with keys -
-            'age group', 'gender', 'role', 'hair length', 'hair type', 'face shape'
+    if style_name.lower() not in [s.lower() for s in gendered_styles.get(gender.lower(), [])]:
+        # Replace with a fallback compatible style
+        fallback_style = gendered_styles[gender.lower()][Math.random(0)]
+        return fallback_style
+    return style_name
 
-    Returns:
-        dict: Predicted classic and trendy hairstyle names
-    """
-    try:
-        # Extract and encode features in the right order
-        feature_order = ['age group', 'gender', 'role', 'hair length', 'hair type', 'face shape']
-        encoded_input = []
 
-        for feature in feature_order:
-            le = le_dict[feature]
-            val = user_info.get(feature)
-            if val is None or val not in le.classes_:
-                return {"error": f"Invalid or missing value for '{feature}': {val}"}
-            encoded_input.append(le.transform([val])[0])
+def predict_hairstyles(user_input, model_path='hairstyle_model.pkl', encoder_path='label_encoders.pkl'):
 
-        # Reshape for prediction
-        X = np.array(encoded_input).reshape(1, -1)
+    # Define the same weights used during training
+    weights = {
+        'age group': 1,
+        'gender': 3,
+        'role': 1,
+        'hair length': 1,
+        'hair type': 1,
+        'face shape': 2
+    }
 
-        # Predict classic and trendy hairstyles
-        y_pred = model.predict(X)[0]
-        classic_encoded, trendy_encoded = y_pred
+    # Encode and apply weights to user input
+    input_encoded = []
+    for feature in ['age group', 'gender', 'role', 'hair length', 'hair type', 'face shape']:
+        le = le_dict[feature]
+        val = user_input[feature]
+        if val not in le.classes_:
+            raise ValueError(f"Value '{val}' not recognized for feature '{feature}'.")
+        encoded_val = le.transform([val])[0]
 
-        # Decode predicted values
-        classic_hairstyle = le_dict['classic'].inverse_transform([classic_encoded])[0]
-        trendy_hairstyle = le_dict['trendy'].inverse_transform([trendy_encoded])[0]
+        # Apply the feature's weight
+        weighted_val = encoded_val * weights[feature]
+        input_encoded.append(weighted_val)
 
-        return {
-            "classic_hairstyle": classic_hairstyle,
-            "trendy_hairstyle": trendy_hairstyle
-        }
+    # Predict using the model
+    input_array = np.array(input_encoded).reshape(1, -1)
+    classic_encoded, trendy_encoded = model.predict(input_array)[0]
 
-    except Exception as e:
-        return {"error": str(e)}
+
+    classic_name = get_gender_compatible_style(classic_encoded, user_input['gender'], 'classic', le_dict)
+    trendy_name = get_gender_compatible_style(trendy_encoded, user_input['gender'], 'trendy', le_dict)
+
+
+    return {
+        'classic': classic_name,
+        'trendy': trendy_name
+    }

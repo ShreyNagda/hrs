@@ -17,7 +17,6 @@ async def analyze_face(file: UploadFile = File(...)):
         shutil.copyfileobj(file.file, buffer)
 
     result = analyze_face_shape(file_path)
-
     os.remove(file_path)
     return result
 
@@ -31,6 +30,7 @@ class UserInfo(BaseModel):
 
 @router.post("/hairstyle")
 async def get_hairstyle(user: UserInfo):
+    print(user)
     user_dict = {
         'age group': user.age_group,
         'gender': user.gender,
@@ -47,6 +47,6 @@ async def get_hairstyle(user: UserInfo):
 
 
     return {
-        "recommended_classic_hairstyle": result["classic_hairstyle"],
-        "recommended_trendy_hairstyle": result["trendy_hairstyle"]
+        "recommended_classic_hairstyle": result["classic"],
+        "recommended_trendy_hairstyle": result["trendy"]
     }

@@ -1,0 +1,338 @@
+[
+    {
+      "index": 1,
+      "name": "Taper Cut",
+      "description": "A haircut where the hair gradually becomes shorter towards the nape of the neck and ears.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=taper+cut&tbm=isch"
+    },
+    {
+      "index": 2,
+      "name": "Wavy Man Bun",
+      "description": "A man's hairstyle where long, wavy hair is gathered and tied into a bun.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=wavy+man+bun&tbm=isch"
+    },
+    {
+      "index": 3,
+      "name": "Medium Bob",
+      "description": "A bob haircut that falls around the collarbone or slightly above or below it.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=medium+bob&tbm=isch"
+    },
+    {
+      "index": 4,
+      "name": "Pixie with Bangs",
+      "description": "A short, textured haircut with varying lengths, paired with fringe or bangs.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=pixie+with+bangs&tbm=isch"
+    },
+    {
+      "index": 5,
+      "name": "Layered Bob",
+      "description": "A bob haircut with different lengths of hair cut throughout to add volume and movement.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=layered+bob&tbm=isch"
+    },
+    {
+      "index": 6,
+      "name": "Sleek Lob",
+      "description": "A long bob (lob) that is styled straight and smooth.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=sleek+lob&tbm=isch"
+    },
+    {
+      "index": 7,
+      "name": "Loose Waves",
+      "description": "Soft, relaxed waves that create a natural and effortless appearance.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=loose+waves&tbm=isch"
+    },
+    {
+      "index": 8,
+      "name": "Half-Up Bun",
+      "description": "The top section of hair is pulled up and styled into a bun, while the rest remains down.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=half-up+bun&tbm=isch"
+    },
+    {
+      "index": 9,
+      "name": "Soft Shag",
+      "description": "A modern take on the shag haircut with softer layers and a blended texture.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=soft+shag&tbm=isch"
+    },
+    {
+      "index": 10,
+      "name": "Beach Waves",
+      "description": "Textured waves that mimic the look of hair after a day at the beach.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=beach+waves&tbm=isch"
+    },
+    {
+      "index": 11,
+      "name": "Classic Braid",
+      "description": "A simple three-strand braid.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=classic+braid&tbm=isch"
+    },
+    {
+      "index": 12,
+      "name": "Messy Layers",
+      "description": "A layered haircut styled with a deliberately tousled and undone appearance.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=messy+layers&tbm=isch"
+    },
+    {
+      "index": 13,
+      "name": "Curtain Bangs",
+      "description": "Bangs that are parted in the middle and frame the face.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=curtain+bangs&tbm=isch"
+    },
+    {
+      "index": 14,
+      "name": "Fringe Fade",
+      "description": "A men's haircut where the fringe blends into a faded cut.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=fringe+fade&tbm=isch"
+    },
+    {
+      "index": 15,
+      "name": "Butterfly Cut",
+      "description": "A layered haircut with shorter layers around the face that blend into longer lengths.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=butterfly+cut+hair&tbm=isch"
+    },
+    {
+      "index": 16,
+      "name": "Bold Bangs",
+      "description": "Thick, statement-making bangs.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=bold+bangs&tbm=isch"
+    },
+    {
+      "index": 17,
+      "name": "Feathered Cut",
+      "description": "A haircut with soft, wispy layers.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=feathered+cut+hair&tbm=isch"
+    },
+    {
+      "index": 18,
+      "name": "Long Layers",
+      "description": "Hair with varying lengths of layers throughout.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=long+layers&tbm=isch"
+    },
+    {
+      "index": 19,
+      "name": "Braided Updo",
+      "description": "Braids styled and pinned up.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=braided+updo&tbm=isch"
+    },
+    {
+      "index": 20,
+      "name": "Pixie Cut",
+      "description": "A short haircut, typically shorter on the back and sides and slightly longer on top.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=pixie+cut&tbm=isch"
+    },
+    {
+      "index": 21,
+      "name": "Baby Bangs",
+      "description": "Very short bangs that sit high on the forehead.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=baby+bangs&tbm=isch"
+    },
+    {
+      "index": 22,
+      "name": "Slicked Back Undercut",
+      "description": "Hair styled back smoothly with product, with shaved sides and back.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=slicked+back+undercut&tbm=isch"
+    },
+    {
+      "index": 23,
+      "name": "French Braid",
+      "description": "A braid where sections of hair are added as it is being created.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=french+braid&tbm=isch"
+    },
+    {
+      "index": 24,
+      "name": "Face-Framing Layers",
+      "description": "Layers cut around the face to highlight features.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=face-framing+layers&tbm=isch"
+    },
+    {
+      "index": 25,
+      "name": "Layered Crop",
+      "description": "A short, cropped haircut with layers.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=layered+crop&tbm=isch"
+    },
+    {
+      "index": 26,
+      "name": "Textured Pixie",
+      "description": "A pixie cut with added texture.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=textured+pixie&tbm=isch"
+    },
+    {
+      "index": 27,
+      "name": "Crew Cut",
+      "description": "A very short men's haircut.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=crew+cut&tbm=isch"
+    },
+    {
+      "index": 28,
+      "name": "Textured Fringe",
+      "description": "Bangs with a textured appearance.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=textured+fringe&tbm=isch"
+    },
+    {
+      "index": 29,
+      "name": "Classic Bob",
+      "description": "A bob haircut that is typically one length and falls around the jawline.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=classic+bob&tbm=isch"
+    },
+    {
+      "index": 30,
+      "name": "Blunt Bangs",
+      "description": "Straight-across bangs with a sharp, even edge.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=blunt+bangs&tbm=isch"
+    },
+    {
+      "index": 31,
+      "name": "Short Crop",
+      "description": "A very short haircut.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=short+crop+haircut&tbm=isch"
+    },
+    {
+      "index": 32,
+      "name": "Wavy Side Sweep",
+      "description": "Wavy hair swept to one side.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=wavy+side+sweep&tbm=isch"
+    },
+    {
+      "index": 33,
+      "name": "Man Bun",
+      "description": "Long hair gathered and tied into a bun.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=man+bun&tbm=isch"
+    },
+    {
+      "index": 34,
+      "name": "Low Fade",
+      "description": "Hair gradually becomes shorter on the sides and back, starting low.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=low+fade&tbm=isch"
+    },
+    {
+      "index": 35,
+      "name": "Shoulder-Length Layers",
+      "description": "Hair that falls to the shoulders with layers.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=shoulder-length+layers&tbm=isch"
+    },
+    {
+      "index": 36,
+      "name": "Voluminous Curls",
+      "description": "Full, bouncy curls.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=voluminous+curls&tbm=isch"
+    },
+    {
+      "index": 37,
+      "name": "Blunt Bob",
+      "description": "A bob haircut with a sharp, even cut at the ends.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=blunt+bob&tbm=isch"
+    },
+    {
+      "index": 38,
+      "name": "Half-Up Ponytail",
+      "description": "The top section of hair is pulled back and secured in a ponytail.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=half-up+ponytail&tbm=isch"
+    },
+    {
+      "index": 39,
+      "name": "Caesar Cut",
+      "description": "A men's haircut with short, horizontally straight bangs.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=caesar+cut&tbm=isch"
+    },
+    {
+      "index": 40,
+      "name": "Faux Hawk",
+      "description": "A hairstyle where a section of hair is styled to stand upright, resembling a mohawk.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=faux+hawk&tbm=isch"
+    },
+    {
+      "index": 41,
+      "name": "Angled Bob",
+      "description": "A bob haircut that is shorter in the back and gradually gets longer towards the front.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=angled+bob&tbm=isch"
+    },
+    {
+      "index": 42,
+      "name": "Micro Bangs",
+      "description": "Very short bangs, shorter than baby bangs.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=micro+bangs&tbm=isch"
+    },
+    {
+      "index": 43,
+      "name": "Messy Fringe",
+      "description": "Bangs with a textured, slightly disheveled appearance.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=messy+fringe&tbm=isch"
+    },
+    {
+      "index": 44,
+      "name": "Asymmetrical Cut",
+      "description": "A haircut where the hair is uneven, with different lengths on each side.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=asymmetrical+cut&tbm=isch"
+    },
+    {
+      "index": 45,
+      "name": "Flat Top",
+      "description": "A men's haircut where the hair is styled to stand upright and form a flat surface on top.",
+      "type": "Classic",
+      "url": "https://www.google.com/search?q=flat+top+haircut&tbm=isch"
+    },
+    {
+      "index": 46,
+      "name": "Twisted Bun",
+      "description": "Hair styled into a bun with a twisted texture.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=twisted+bun&tbm=isch"
+    },
+    {
+      "index": 47,
+      "name": "Chin-Length Layers",
+      "description": "Layers that fall around the chin length.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=chin-length+layers&tbm=isch"
+    },
+    {
+      "index": 48,
+      "name": "Layered Shag",
+      "description": "A shag haircut with distinct layers for texture and volume.",
+      "type": "Trendy",
+      "url": "https://www.google.com/search?q=layered+shag&tbm=isch"
+    }
+  ]
