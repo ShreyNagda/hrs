@@ -1,262 +1,122 @@
 [
-  {
-    "name": "Crew Cut",
-    "description": "A classic short hairstyle with evenly trimmed hair all around the head, low maintenance and clean look.",
-    "face_shapes": [
-      "oval",
-      "square",
-      "round"
-    ],
-    "age_groups": [
-      "teen",
-      "youth",
-      "adult",
-      "senior"
-    ],
-    "gender": "male",
-    "hair_length": "short",
-    "hair_type": [
-      "straight",
-      "wavy"
-    ],
-    "work_suitability": [
-      "formal",
-      "casual"
-    ],
-    "trend": "classic",
-    "image": "https://example.com/images/crew_cut.jpg"
-  },
-  {
-    "name": "Pompadour",
-    "description": "Features long hair on top that is swept upward and back for volume, paired with short sides.",
-    "face_shapes": [
-      "oval",
-      "diamond",
-      "square"
-    ],
-    "age_groups": [
-      "youth",
-      "adult"
-    ],
-    "gender": "male",
-    "hair_length": "medium",
-    "hair_type": [
-      "straight",
-      "wavy"
-    ],
-    "work_suitability": [
-      "formal",
-      "party"
-    ],
-    "trend": "trendy",
-    "image": "https://example.com/images/pompadour.jpg"
-  },
-  {
-    "name": "Undercut",
-    "description": "Hair is clipped short on the sides and back with longer hair on top; versatile and edgy.",
-    "face_shapes": [
-      "oval",
-      "square",
-      "oblong"
-    ],
-    "age_groups": [
-      "teen",
-      "youth",
-      "adult"
-    ],
-    "gender": "male",
-    "hair_length": "medium",
-    "hair_type": [
-      "straight",
-      "wavy"
-    ],
-    "work_suitability": [
-      "casual",
-      "party"
-    ],
-    "trend": "trendy",
-    "image": "https://example.com/images/undercut.jpg"
-  },
-  {
-    "name": "Buzz Cut",
-    "description": "Very short, evenly clipped hair for a neat and minimalist look; requires very low maintenance.",
-    "face_shapes": [
-      "oval",
-      "square",
-      "round"
-    ],
-    "age_groups": [
-      "teen",
-      "youth",
-      "adult",
-      "senior"
-    ],
-    "gender": "male",
-    "hair_length": "very short",
-    "hair_type": [
-      "straight",
-      "wavy",
-      "curly"
-    ],
-    "work_suitability": [
-      "military",
-      "sports"
-    ],
-    "trend": "classic",
-    "image": "https://example.com/images/buzz_cut.jpg"
-  },
-  {
-    "name": "Side Part",
-    "description": "A timeless hairstyle with a clean parting on one side, good for formal and professional settings.",
-    "face_shapes": [
-      "oval",
-      "square",
-      "round"
-    ],
-    "age_groups": [
-      "youth",
-      "adult",
-      "senior"
-    ],
-    "gender": "male",
-    "hair_length": "short",
-    "hair_type": [
-      "straight",
-      "wavy"
-    ],
-    "work_suitability": [
-      "formal",
-      "professional"
-    ],
-    "trend": "classic",
-    "image": "https://example.com/images/side_part.jpg"
-  },
-  {
-    "name": "Quiff",
-    "description": "Hair is brushed upward and back from the forehead to create volume, paired with tapered sides.",
-    "face_shapes": [
-      "oval",
-      "round",
-      "diamond"
-    ],
-    "age_groups": [
-      "youth",
-      "adult"
-    ],
-    "gender": "male",
-    "hair_length": "medium",
-    "hair_type": [
-      "straight",
-      "wavy"
-    ],
-    "work_suitability": [
-      "casual",
-      "party"
-    ],
-    "trend": "trendy",
-    "image": "https://example.com/images/quiff.jpg"
-  },
-  {
-    "name": "Man Bun",
-    "description": "Hair is tied into a bun at the back or top of the head; trendy and suitable for long hair.",
-    "face_shapes": [
-      "oval",
-      "diamond",
-      "oblong"
-    ],
-    "age_groups": [
-      "youth",
-      "adult"
-    ],
-    "gender": "male",
-    "hair_length": "long",
-    "hair_type": [
-      "wavy",
-      "straight"
-    ],
-    "work_suitability": [
-      "casual",
-      "artistic"
-    ],
-    "trend": "trendy",
-    "image": "https://example.com/images/man_bun.jpg"
-  },
-  {
-    "name": "Fade",
-    "description": "Short haircut where hair gradually fades from the top down the sides and back.",
-    "face_shapes": [
-      "square",
-      "oval",
-      "round"
-    ],
-    "age_groups": [
-      "teen",
-      "youth",
-      "adult"
-    ],
-    "gender": "male",
-    "hair_length": "short",
-    "hair_type": [
-      "straight",
-      "wavy",
-      "curly"
-    ],
-    "work_suitability": [
-      "casual",
-      "sports"
-    ],
-    "trend": "trendy",
-    "image": "https://example.com/images/fade.jpg"
-  },
-  {
-    "name": "French Crop",
-    "description": "Short hairstyle with a fringe; neat and suits men with receding hairlines.",
-    "face_shapes": [
-      "square",
-      "oval",
-      "round"
-    ],
-    "age_groups": [
-      "youth",
-      "adult",
-      "senior"
-    ],
-    "gender": "male",
-    "hair_length": "short",
-    "hair_type": [
-      "straight",
-      "wavy"
-    ],
-    "work_suitability": [
-      "professional",
-      "casual"
-    ],
-    "trend": "classic",
-    "image": "https://example.com/images/french_crop.jpg"
-  },
-  {
-    "name": "Textured Spikes",
-    "description": "Short to medium hair styled upward with product for a spiky, dynamic look.",
-    "face_shapes": [
-      "oval",
-      "round",
-      "square"
-    ],
-    "age_groups": [
-      "teen",
-      "youth"
-    ],
-    "gender": "male",
-    "hair_length": "short",
-    "hair_type": [
-      "straight",
-      "wavy"
-    ],
-    "work_suitability": [
-      "casual",
-      "party"
-    ],
-    "trend": "trendy",
-    "image": "https://example.com/images/textured_spikes.jpg"
-  }
+    {
+        "name": "Crew Cut",
+        "description": "A classic short hairstyle with evenly trimmed hair all around the head, low maintenance and clean look.",
+        "face_shapes": ["oval", "square", "round"],
+        "age_groups": ["teen", "youth", "adult", "senior"],
+        "gender": "male",
+        "hair_length": "short",
+        "hair_type": ["straight", "wavy"],
+        "work_suitability": ["formal", "casual"],
+        "trend": "classic",
+        "image": "https://example.com/images/crew_cut.jpg"
+    },
+    {
+        "name": "Pompadour",
+        "description": "Features long hair on top that is swept upward and back for volume, paired with short sides.",
+        "face_shapes": ["oval", "diamond", "square"],
+        "age_groups": ["youth", "adult"],
+        "gender": "male",
+        "hair_length": "medium",
+        "hair_type": ["straight", "wavy"],
+        "work_suitability": ["formal", "party"],
+        "trend": "trendy",
+        "image": "https://example.com/images/pompadour.jpg"
+    },
+    {
+        "name": "Undercut",
+        "description": "Hair is clipped short on the sides and back with longer hair on top; versatile and edgy.",
+        "face_shapes": ["oval", "square", "oblong"],
+        "age_groups": ["teen", "youth", "adult"],
+        "gender": "male",
+        "hair_length": "medium",
+        "hair_type": ["straight", "wavy"],
+        "work_suitability": ["casual", "party"],
+        "trend": "trendy",
+        "image": "https://example.com/images/undercut.jpg"
+    },
+    {
+        "name": "Buzz Cut",
+        "description": "Very short, evenly clipped hair for a neat and minimalist look; requires very low maintenance.",
+        "face_shapes": ["oval", "square", "round"],
+        "age_groups": ["teen", "youth", "adult", "senior"],
+        "gender": "male",
+        "hair_length": "very short",
+        "hair_type": ["straight", "wavy", "curly"],
+        "work_suitability": ["military", "sports"],
+        "trend": "classic",
+        "image": "https://example.com/images/buzz_cut.jpg"
+    },
+    {
+        "name": "Side Part",
+        "description": "A timeless hairstyle with a clean parting on one side, good for formal and professional settings.",
+        "face_shapes": ["oval", "square", "round"],
+        "age_groups": ["youth", "adult", "senior"],
+        "gender": "male",
+        "hair_length": "short",
+        "hair_type": ["straight", "wavy"],
+        "work_suitability": ["formal", "professional"],
+        "trend": "classic",
+        "image": "https://example.com/images/side_part.jpg"
+    },
+    {
+        "name": "Quiff",
+        "description": "Hair is brushed upward and back from the forehead to create volume, paired with tapered sides.",
+        "face_shapes": ["oval", "round", "diamond"],
+        "age_groups": ["youth", "adult"],
+        "gender": "male",
+        "hair_length": "medium",
+        "hair_type": ["straight", "wavy"],
+        "work_suitability": ["casual", "party"],
+        "trend": "trendy",
+        "image": "https://example.com/images/quiff.jpg"
+    },
+    {
+        "name": "Man Bun",
+        "description": "Hair is tied into a bun at the back or top of the head; trendy and suitable for long hair.",
+        "face_shapes": ["oval", "diamond", "oblong"],
+        "age_groups": ["youth", "adult"],
+        "gender": "male",
+        "hair_length": "long",
+        "hair_type": ["wavy", "straight"],
+        "work_suitability": ["casual", "artistic"],
+        "trend": "trendy",
+        "image": "https://example.com/images/man_bun.jpg"
+    },
+    {
+        "name": "Fade",
+        "description": "Short haircut where hair gradually fades from the top down the sides and back.",
+        "face_shapes": ["square", "oval", "round"],
+        "age_groups": ["teen", "youth", "adult"],
+        "gender": "male",
+        "hair_length": "short",
+        "hair_type": ["straight", "wavy", "curly"],
+        "work_suitability": ["casual", "sports"],
+        "trend": "trendy",
+        "image": "https://example.com/images/fade.jpg"
+    },
+    {
+        "name": "French Crop",
+        "description": "Short hairstyle with a fringe; neat and suits men with receding hairlines.",
+        "face_shapes": ["square", "oval", "round"],
+        "age_groups": ["youth", "adult", "senior"],
+        "gender": "male",
+        "hair_length": "short",
+        "hair_type": ["straight", "wavy"],
+        "work_suitability": ["professional", "casual"],
+        "trend": "classic",
+        "image": "https://example.com/images/french_crop.jpg"
+    },
+    {
+        "name": "Textured Spikes",
+        "description": "Short to medium hair styled upward with product for a spiky, dynamic look.",
+        "face_shapes": ["oval", "round", "square"],
+        "age_groups": ["teen", "youth"],
+        "gender": "male",
+        "hair_length": "short",
+        "hair_type": ["straight", "wavy"],
+        "work_suitability": ["casual", "party"],
+        "trend": "trendy",
+        "image": "https://example.com/images/textured_spikes.jpg"
+    }
 ]

@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import json
-
+import joblib
 # Load hairstyle dataset
 def load_hairstyles(path="data/hairstyles.json"):
     with open(path, 'r', encoding='utf-8') as f:
@@ -14,10 +14,10 @@ def vectorize_hairstyles(data):
     for h in data:
         f = {}
         for shape in h['face_shapes']:
-            f[f'face_shape_{shape}'] = 1
+            f[f'face_shape_{shape}'] = 3
         for age in h['age_groups']:
             f[f'age_{age}'] = 1
-        f[f'gender_{h["gender"]}'] = 1
+        f[f'gender_{h["gender"]}'] = 5
         f[f'hair_length_{h["hair_length"]}'] = 1
         for ht in h['hair_type']:
             f[f'hair_type_{ht}'] = 1
@@ -26,18 +26,22 @@ def vectorize_hairstyles(data):
         feature_dicts.append(f)
     vectorizer = DictVectorizer(sparse=False)
     vectors = vectorizer.fit_transform(feature_dicts)
+    joblib.dump(vectorizer, "vectorizer.pkl")
+    joblib.dump(np.array(vectors), "hairstyle_vectors.pkl")
     return vectorizer, np.array(vectors)
 
 # Load data and vectorize once
 hairstyles = load_hairstyles()
-vectorizer, hairstyle_vectors = vectorize_hairstyles(hairstyles)
+vectorizer = joblib.load("vectorizer.pkl")
+hairstyle_vectors = joblib.load("hairstyle_vectors.pkl")
+# vectorizer, hairstyle_vectors = vectorize_hairstyles(hairstyles)
 
 # Create user vector
 def create_user_vector(face_shape, age_group, gender, hair_length=None, hair_type=None, occasion=None):
     user_dict = {
-        f'face_shape_{face_shape}': 1,
-        f'age_{age_group}': 1,
-        f'gender_{gender}': 1
+        f'face_shape_{face_shape}': 3,
+        f'age_{age_group}': 2,
+        f'gender_{gender}': 5
     }
     if hair_length:
         user_dict[f'hair_length_{hair_length}'] = 1
@@ -50,7 +54,6 @@ def create_user_vector(face_shape, age_group, gender, hair_length=None, hair_typ
 # Recommend hairstyles
 def recommend_hairstyles(user_vector, top_n=3):
     scores = cosine_similarity(user_vector, hairstyle_vectors)[0]
-    print(scores)
     ranked = sorted(zip(hairstyles, scores), key=lambda x: x[1], reverse=True)
     return [
         {"name": r["name"], "score": round(s, 2), "desc": r.get("description")}

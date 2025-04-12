@@ -571,7 +571,7 @@
         "gender": "female",
         "hair_length": "medium",
         "hair_type": ["curly"],
-        "work_suitability": ["casual", "festive", "work"],
+        "work_suitability": ["casual", "festive"],
         "trend": "trendy",
         "image": "https://example.com/images/traditional_south_indian_braid.jpg"
     },
@@ -607,7 +607,7 @@
         "gender": "male",
         "hair_length": "medium",
         "hair_type": ["straight", "wavy"],
-        "work_suitability": ["formal", "party"],
+        "work_suitability": ["formal", "festive"],
         "trend": "trendy",
         "image": "https://example.com/images/pompadour.jpg"
     },
@@ -619,7 +619,7 @@
         "gender": "male",
         "hair_length": "medium",
         "hair_type": ["straight", "wavy"],
-        "work_suitability": ["casual", "party"],
+        "work_suitability": ["casual", "festive"],
         "trend": "trendy",
         "image": "https://example.com/images/undercut.jpg"
     },
@@ -631,7 +631,7 @@
         "gender": "male",
         "hair_length": "very short",
         "hair_type": ["straight", "wavy", "curly"],
-        "work_suitability": ["military", "sports"],
+        "work_suitability": ["formal", "sports"],
         "trend": "classic",
         "image": "https://example.com/images/buzz_cut.jpg"
     },
@@ -655,7 +655,7 @@
         "gender": "male",
         "hair_length": "medium",
         "hair_type": ["straight", "wavy"],
-        "work_suitability": ["casual", "party"],
+        "work_suitability": ["casual", "festive"],
         "trend": "trendy",
         "image": "https://example.com/images/quiff.jpg"
     },
@@ -667,7 +667,7 @@
         "gender": "male",
         "hair_length": "long",
         "hair_type": ["wavy", "straight"],
-        "work_suitability": ["casual", "artistic"],
+        "work_suitability": ["casual", "creative"],
         "trend": "trendy",
         "image": "https://example.com/images/man_bun.jpg"
     },
@@ -703,7 +703,7 @@
         "gender": "male",
         "hair_length": "short",
         "hair_type": ["straight", "wavy"],
-        "work_suitability": ["casual", "party"],
+        "work_suitability": ["casual", "festive"],
         "trend": "trendy",
         "image": "https://example.com/images/textured_spikes.jpg"
     }
