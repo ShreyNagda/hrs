@@ -1,0 +1,1227 @@
+[
+    {
+        "name": "Loose Braid",
+        "description": "Loose Braid is a popular hairstyle among Indian women, suited for various occasions.",
+        "face_shapes": [
+          "heart",
+          "square",
+          "diamond",
+          "long"
+        ],
+        "age_groups": [
+          "senior",
+          "youth",
+          "adult"
+        ],
+        "gender": "female",
+        "hair_length": "long",
+        "hair_type": [
+          "wavy",
+          "straight"
+        ],
+        "work_suitability": [
+          "festive",
+          "casual"
+        ],
+        "trend": "trendy",
+        "image": "https://example.com/images/loose_braid.jpg"
+      },
+  {
+    "name": "Half-Up Bun",
+    "description": "Half-Up Bun is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "heart",
+      "diamond",
+      "round"
+    ],
+    "age_groups": [
+      "adult",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy",
+      "straight"
+    ],
+    "work_suitability": [
+      "casual",
+      "festive",
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/half-up_bun.jpg"
+  },
+  {
+    "name": "Low Bun with Gajra",
+    "description": "Low Bun with Gajra is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "round",
+      "oval",
+      "long"
+    ],
+    "age_groups": [
+      "adult",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "straight"
+    ],
+    "work_suitability": [
+      "casual",
+      "festive"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/low_bun_with_gajra.jpg"
+  },
+  {
+    "name": "Messy Side Braid",
+    "description": "Messy Side Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "diamond"
+    ],
+    "age_groups": [
+      "senior",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "curly",
+      "wavy"
+    ],
+    "work_suitability": [
+      "festive",
+      "work"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/messy_side_braid.jpg"
+  },
+  {
+    "name": "Sleek Straight with Middle Parting",
+    "description": "Sleek Straight with Middle Parting is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "square",
+      "round",
+      "oval"
+    ],
+    "age_groups": [
+      "youth",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "casual",
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/sleek_straight_with_middle_parting.jpg"
+  },
+  {
+    "name": "Short Curly Bob",
+    "description": "Short Curly Bob is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "diamond"
+    ],
+    "age_groups": [
+      "youth",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "formal",
+      "work"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/short_curly_bob.jpg"
+  },
+  {
+    "name": "Feather Cut",
+    "description": "Feather Cut is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "round",
+      "heart"
+    ],
+    "age_groups": [
+      "youth",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "casual",
+      "formal",
+      "festive"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/feather_cut.jpg"
+  },
+  {
+    "name": "Layered Hair with Side Bangs",
+    "description": "Layered Hair with Side Bangs is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "heart",
+      "oval"
+    ],
+    "age_groups": [
+      "adult",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "wavy",
+      "straight"
+    ],
+    "work_suitability": [
+      "festive",
+      "work",
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/layered_hair_with_side_bangs.jpg"
+  },
+  {
+    "name": "Side Swept Curls",
+    "description": "Side Swept Curls is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "heart",
+      "diamond",
+      "long"
+    ],
+    "age_groups": [
+      "senior",
+      "adult",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy",
+      "straight"
+    ],
+    "work_suitability": [
+      "work",
+      "casual",
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/side_swept_curls.jpg"
+  },
+  {
+    "name": "Classic Ponytail",
+    "description": "Classic Ponytail is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "round",
+      "heart",
+      "square",
+      "diamond"
+    ],
+    "age_groups": [
+      "adult",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "curly",
+      "wavy"
+    ],
+    "work_suitability": [
+      "festive",
+      "casual",
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/classic_ponytail.jpg"
+  },
+  {
+    "name": "Crown Braid",
+    "description": "Crown Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "square",
+      "round",
+      "heart"
+    ],
+    "age_groups": [
+      "senior",
+      "youth",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "formal",
+      "work",
+      "festive"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/crown_braid.jpg"
+  },
+  {
+    "name": "Side French Braid",
+    "description": "Side French Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "round",
+      "diamond"
+    ],
+    "age_groups": [
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "curly",
+      "straight"
+    ],
+    "work_suitability": [
+      "casual",
+      "festive",
+      "work"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/side_french_braid.jpg"
+  },
+  {
+    "name": "Temple Bun",
+    "description": "Temple Bun is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "heart",
+      "round"
+    ],
+    "age_groups": [
+      "youth",
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "festive",
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/temple_bun.jpg"
+  },
+  {
+    "name": "High Puff Ponytail",
+    "description": "High Puff Ponytail is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "round",
+      "heart",
+      "long"
+    ],
+    "age_groups": [
+      "adult",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "curly",
+      "wavy"
+    ],
+    "work_suitability": [
+      "casual",
+      "festive"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/high_puff_ponytail.jpg"
+  },
+  {
+    "name": "Fishtail Braid",
+    "description": "Fishtail Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "round",
+      "diamond"
+    ],
+    "age_groups": [
+      "senior",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "straight",
+      "curly"
+    ],
+    "work_suitability": [
+      "formal",
+      "festive",
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/fishtail_braid.jpg"
+  },
+  {
+    "name": "Braided Crown",
+    "description": "Braided Crown is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "round",
+      "diamond",
+      "heart"
+    ],
+    "age_groups": [
+      "adult",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy",
+      "curly"
+    ],
+    "work_suitability": [
+      "casual",
+      "work"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/braided_crown.jpg"
+  },
+  {
+    "name": "Juda Bun",
+    "description": "Juda Bun is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "square",
+      "oval",
+      "long"
+    ],
+    "age_groups": [
+      "senior",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "straight",
+      "wavy"
+    ],
+    "work_suitability": [
+      "casual",
+      "festive"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/juda_bun.jpg"
+  },
+  {
+    "name": "Twisted Low Ponytail",
+    "description": "Twisted Low Ponytail is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "long"
+    ],
+    "age_groups": [
+      "teen",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/twisted_low_ponytail.jpg"
+  },
+  {
+    "name": "Double Dutch Braids",
+    "description": "Double Dutch Braids is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "oval"
+    ],
+    "age_groups": [
+      "senior",
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "festive",
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/double_dutch_braids.jpg"
+  },
+  {
+    "name": "Voluminous Curls",
+    "description": "Voluminous Curls is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "heart"
+    ],
+    "age_groups": [
+      "adult",
+      "senior",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "straight",
+      "curly"
+    ],
+    "work_suitability": [
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/voluminous_curls.jpg"
+  },
+  {
+    "name": "High Bun",
+    "description": "High Bun is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "round",
+      "long",
+      "diamond",
+      "square"
+    ],
+    "age_groups": [
+      "youth",
+      "senior",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy",
+      "curly"
+    ],
+    "work_suitability": [
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/high_bun.jpg"
+  },
+  {
+    "name": "Curly Lob",
+    "description": "Curly Lob is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "round",
+      "long",
+      "diamond"
+    ],
+    "age_groups": [
+      "adult",
+      "teen",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "casual",
+      "formal",
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/curly_lob.jpg"
+  },
+  {
+    "name": "Side Part with Flicks",
+    "description": "Side Part with Flicks is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "heart"
+    ],
+    "age_groups": [
+      "youth",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "straight"
+    ],
+    "work_suitability": [
+      "casual",
+      "festive",
+      "work"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/side_part_with_flicks.jpg"
+  },
+  {
+    "name": "Straight Bob",
+    "description": "Straight Bob is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "oval",
+      "round",
+      "diamond"
+    ],
+    "age_groups": [
+      "senior",
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy",
+      "curly"
+    ],
+    "work_suitability": [
+      "festive",
+      "casual"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/straight_bob.jpg"
+  },
+  {
+    "name": "Sleek Juda with Maang Tikka",
+    "description": "Sleek Juda with Maang Tikka is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "heart",
+      "long"
+    ],
+    "age_groups": [
+      "youth",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "festive"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/sleek_juda_with_maang_tikka.jpg"
+  },
+  {
+    "name": "Wavy Lob",
+    "description": "Wavy Lob is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "heart",
+      "long"
+    ],
+    "age_groups": [
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "straight",
+      "wavy"
+    ],
+    "work_suitability": [
+      "festive",
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/wavy_lob.jpg"
+  },
+  {
+    "name": "Layered Straight Hair",
+    "description": "Layered Straight Hair is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "heart",
+      "round"
+    ],
+    "age_groups": [
+      "teen",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "straight"
+    ],
+    "work_suitability": [
+      "work",
+      "casual"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/layered_straight_hair.jpg"
+  },
+  {
+    "name": "Loose Curls with Hairband",
+    "description": "Loose Curls with Hairband is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "long"
+    ],
+    "age_groups": [
+      "adult",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "straight",
+      "curly"
+    ],
+    "work_suitability": [
+      "work",
+      "festive",
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/loose_curls_with_hairband.jpg"
+  },
+  {
+    "name": "Crimped Ponytail",
+    "description": "Crimped Ponytail is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "round",
+      "long",
+      "oval",
+      "heart"
+    ],
+    "age_groups": [
+      "senior",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "festive"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/crimped_ponytail.jpg"
+  },
+  {
+    "name": "Boho Braid",
+    "description": "Boho Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "square"
+    ],
+    "age_groups": [
+      "teen",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "casual"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/boho_braid.jpg"
+  },
+  {
+    "name": "Bubble Braid",
+    "description": "Bubble Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "long",
+      "round",
+      "oval"
+    ],
+    "age_groups": [
+      "senior",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "curly",
+      "straight"
+    ],
+    "work_suitability": [
+      "work",
+      "casual"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/bubble_braid.jpg"
+  },
+  {
+    "name": "Side Swept Straight Hair",
+    "description": "Side Swept Straight Hair is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "oval"
+    ],
+    "age_groups": [
+      "adult",
+      "youth",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "wavy",
+      "straight"
+    ],
+    "work_suitability": [
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/side_swept_straight_hair.jpg"
+  },
+  {
+    "name": "Half Crown Braid",
+    "description": "Half Crown Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "long",
+      "oval"
+    ],
+    "age_groups": [
+      "teen",
+      "youth",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "festive",
+      "formal",
+      "casual"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/half_crown_braid.jpg"
+  },
+  {
+    "name": "Chignon Bun",
+    "description": "Chignon Bun is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "heart",
+      "diamond",
+      "round",
+      "oval"
+    ],
+    "age_groups": [
+      "senior",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "straight"
+    ],
+    "work_suitability": [
+      "festive",
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/chignon_bun.jpg"
+  },
+  {
+    "name": "Curly Side Ponytail",
+    "description": "Curly Side Ponytail is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "long",
+      "heart"
+    ],
+    "age_groups": [
+      "senior",
+      "youth",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "casual",
+      "work",
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/curly_side_ponytail.jpg"
+  },
+  {
+    "name": "Pinned Back Waves",
+    "description": "Pinned Back Waves is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "long",
+      "heart",
+      "round"
+    ],
+    "age_groups": [
+      "youth",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "formal",
+      "work",
+      "festive"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/pinned_back_waves.jpg"
+  },
+  {
+    "name": "Mid-parted Low Ponytail",
+    "description": "Mid-parted Low Ponytail is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "square",
+      "long",
+      "round"
+    ],
+    "age_groups": [
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "straight",
+      "wavy"
+    ],
+    "work_suitability": [
+      "work"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/mid-parted_low_ponytail.jpg"
+  },
+  {
+    "name": "Straight Hair with Gajra",
+    "description": "Straight Hair with Gajra is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "oval"
+    ],
+    "age_groups": [
+      "senior",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "work",
+      "formal",
+      "casual"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/straight_hair_with_gajra.jpg"
+  },
+  {
+    "name": "Top Knot",
+    "description": "Top Knot is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "square",
+      "heart"
+    ],
+    "age_groups": [
+      "youth",
+      "teen",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy",
+      "curly"
+    ],
+    "work_suitability": [
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/top_knot.jpg"
+  },
+  {
+    "name": "Loose Bun",
+    "description": "Loose Bun is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "square",
+      "round",
+      "oval"
+    ],
+    "age_groups": [
+      "teen",
+      "adult",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "work",
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/loose_bun.jpg"
+  },
+  {
+    "name": "Side Braided Bun",
+    "description": "Side Braided Bun is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "oval"
+    ],
+    "age_groups": [
+      "youth",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "wavy",
+      "straight"
+    ],
+    "work_suitability": [
+      "work",
+      "formal"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/side_braided_bun.jpg"
+  },
+  {
+    "name": "Simple Juda",
+    "description": "Simple Juda is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "heart",
+      "diamond",
+      "square"
+    ],
+    "age_groups": [
+      "youth",
+      "adult",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "straight"
+    ],
+    "work_suitability": [
+      "festive",
+      "formal",
+      "casual"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/simple_juda.jpg"
+  },
+  {
+    "name": "Side Choti",
+    "description": "Side Choti is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "oval",
+      "round"
+    ],
+    "age_groups": [
+      "youth",
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy",
+      "curly"
+    ],
+    "work_suitability": [
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/side_choti.jpg"
+  },
+  {
+    "name": "Straight Hair with Flicks",
+    "description": "Straight Hair with Flicks is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "oval"
+    ],
+    "age_groups": [
+      "adult",
+      "senior",
+      "youth"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "straight",
+      "curly"
+    ],
+    "work_suitability": [
+      "casual",
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/straight_hair_with_flicks.jpg"
+  },
+  {
+    "name": "High Puff with Waves",
+    "description": "High Puff with Waves is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "round",
+      "square",
+      "oval"
+    ],
+    "age_groups": [
+      "senior",
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "straight"
+    ],
+    "work_suitability": [
+      "work",
+      "festive",
+      "formal"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/high_puff_with_waves.jpg"
+  },
+  {
+    "name": "Low Ponytail",
+    "description": "Low Ponytail is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "square",
+      "diamond",
+      "oval"
+    ],
+    "age_groups": [
+      "youth",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "long",
+    "hair_type": [
+      "curly",
+      "wavy"
+    ],
+    "work_suitability": [
+      "casual"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/low_ponytail.jpg"
+  },
+  {
+    "name": "Mini Braids",
+    "description": "Mini Braids is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "round"
+    ],
+    "age_groups": [
+      "teen",
+      "adult"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "casual"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/mini_braids.jpg"
+  },
+  {
+    "name": "Traditional South Indian Braid",
+    "description": "Traditional South Indian Braid is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "heart",
+      "round",
+      "diamond"
+    ],
+    "age_groups": [
+      "senior",
+      "adult",
+      "teen"
+    ],
+    "gender": "female",
+    "hair_length": "medium",
+    "hair_type": [
+      "curly"
+    ],
+    "work_suitability": [
+      "casual",
+      "festive",
+      "work"
+    ],
+    "trend": "trendy",
+    "image": "https://example.com/images/traditional_south_indian_braid.jpg"
+  },
+  {
+    "name": "Side Waves",
+    "description": "Side Waves is a popular hairstyle among Indian women, suited for various occasions.",
+    "face_shapes": [
+      "diamond",
+      "heart",
+      "round",
+      "long"
+    ],
+    "age_groups": [
+      "youth",
+      "teen",
+      "senior"
+    ],
+    "gender": "female",
+    "hair_length": "short",
+    "hair_type": [
+      "wavy"
+    ],
+    "work_suitability": [
+      "casual"
+    ],
+    "trend": "classic",
+    "image": "https://example.com/images/side_waves.jpg"
+  }
+]
