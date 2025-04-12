@@ -18,7 +18,7 @@ API_KEY = os.getenv("API_KEY")
 API_SECRET = os.getenv("API_SECRET")
 
 
-app = FastAPI()
+app = FastAPI(title="Hairstyle Recommendation")
 
 # Allow frontend access
 app.add_middleware(
@@ -39,9 +39,9 @@ class UserProfile(BaseModel):
     hair_type: Optional[str] = None # Straight, Curly, Wavy
     occasion: Optional[str] = None # Formal, Casual, Sports, Festive
 
-@app.post("/recommend")
-def get_hairstyles(user: UserProfile):
-    return get_recommendations(face_shape=user.face_shape, age_group=user.age_group, gender=user.gender, hair_length=user.hair_length, hair_type=user.hair_type, occasion=user.occasion)
+@app.get("/")
+def home():
+    return JSONResponse(content="Hairstyle Recommendation System API v1 working successfully!")
 
 @app.post("/faceshape/")
 async def analyze_face_endpoint(file: UploadFile = File(...)):
@@ -55,3 +55,7 @@ async def analyze_face_endpoint(file: UploadFile = File(...)):
         return JSONResponse(content=result)
     except Exception as e:
         return JSONResponse(content={"error": str(e)}, status_code=500)
+
+@app.post("/recommend")
+def get_hairstyles(user: UserProfile):
+    return get_recommendations(face_shape=user.face_shape, age_group=user.age_group, gender=user.gender, hair_length=user.hair_length, hair_type=user.hair_type, occasion=user.occasion)
