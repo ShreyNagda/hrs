@@ -5,6 +5,8 @@ from pydantic import BaseModel
 from typing import Optional
 #api keys from .env
 from dotenv import load_dotenv
+from PIL import Image
+from io import BytesIO
 import os
 #helper functions
 from utils.face_shape import analyze_faceshape
@@ -39,6 +41,18 @@ class UserProfile(BaseModel):
     hair_type: Optional[str] = None # Straight, Curly, Wavy
     occasion: Optional[str] = None # Formal, Casual, Sports, Festive
 
+def resize_image(file, size=(200, 300)):
+    image = Image.open(file)
+    image = image.convert("RGB")  # Ensure it's in a compatible format
+    image = image.resize(size)
+
+    # Save resized image to BytesIO
+    buffer = BytesIO()
+    image.save(buffer, format='JPEG')
+    buffer.seek(0)
+
+    return ('filename.jpg', buffer, 'image/jpeg')
+
 @app.get("/")
 def home():
     return JSONResponse(content="Hairstyle Recommendation System API v1 working successfully!")
@@ -46,9 +60,8 @@ def home():
 @app.post("/faceshape/")
 async def analyze_face_endpoint(file: UploadFile = File(...)):
     try:
-        contents = await file.read()
         result = analyze_faceshape(
-            image_file=('filename.jpg', contents, file.content_type),
+            image_file=resize_image(file.file),
             api_key=API_KEY,
             api_secret=API_SECRET
         )
