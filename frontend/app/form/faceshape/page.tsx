@@ -75,10 +75,10 @@ export default function FaceShape() {
 
     return (
         <div className="bg-gradient-to-b from-indigo-900/70 to-black p-4 flex flex-col items-center justify-center min-h-svh text-white">
-            <div className="text-xl md:text-4xl text-center font-bold">
+            <div className="text-2xl md:text-4xl text-center font-bold">
                 Step 1: Determine Face Shape
             </div>
-            <div className="my-3 text-center">
+            <div className="my-3 text-center text-lg md:text-xl">
                 Upload a straight face selfie or click one now
             </div>
 
@@ -101,7 +101,7 @@ export default function FaceShape() {
                     />
                     <label
                         htmlFor="fileInput"
-                        className="cursor-pointer border p-3 text-white rounded"
+                        className="cursor-pointer border p-3 text-white rounded w-full md:w-[300px] text-center"
                     >
                         {file?.name ?? "Upload a file"}
                     </label>
@@ -110,7 +110,7 @@ export default function FaceShape() {
                     <button
                         type="submit"
                         disabled={file === null || result !== null}
-                        className="bg-white text-black p-3 rounded-sm mt-2 disabled:bg-gray-500 disabled:cursor-not-allowed cursor-pointer"
+                        className="bg-white text-black p-3 rounded-sm mt-2 disabled:bg-gray-500 disabled:cursor-not-allowed cursor-pointer w-full md:w-[300px]"
                     >
                         {!loading ? "Determine Face Shape" : "Loading"}
                     </button>
@@ -138,7 +138,7 @@ export default function FaceShape() {
                             <strong>Age Group:</strong> {result.age}
                         </div>
                         <div>
-                            <strong>Jawline:</strong> {result.jawline}
+                            <strong>Gender:</strong> {result.gender}
                         </div>
                     </div>
                 </div>

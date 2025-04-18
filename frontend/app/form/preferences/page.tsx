@@ -13,13 +13,8 @@ export default function Preferences() {
     });
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-
-        if (!hairLength || !hairType) {
-            toast.error("Please select both hair length and hair type");
-            return;
-        }
-
-        updateData({ hairLength, hairType });
+        if (hairLength !== "" && hairType !== "")
+            updateData({ hairLength, hairType });
         goToNextStep();
     };
 
@@ -41,7 +36,6 @@ export default function Preferences() {
                         value={hairLength}
                         onChange={(e) => setHairLength(e.target.value)}
                         className="p-2 rounded bg-white text-black"
-                        required
                     >
                         <option value="">Select hair length</option>
                         <option value="short">Short</option>
@@ -57,7 +51,6 @@ export default function Preferences() {
                         value={hairType}
                         onChange={(e) => setHairType(e.target.value)}
                         className="p-2 rounded bg-white text-black"
-                        required
                     >
                         <option value="">Select hair type</option>
                         <option value="straight">Straight</option>

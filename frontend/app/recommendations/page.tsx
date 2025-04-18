@@ -16,7 +16,7 @@ type Hairstyle = {
 export default function Recommendations() {
     const { data } = useFormContext();
     const [hairstyles, setHairstyles] = useState<Hairstyle[]>([]);
-
+    const [results, setResults] = useState<[{}] | null>(null);
     useEffect(() => {
         fetch("/hairstyles.json")
             .then((res) => res.json())
@@ -30,48 +30,26 @@ export default function Recommendations() {
         }
     }, [data]);
 
-    const [results, setResults] = useState<{
-        classic: Hairstyle | null;
-        trendy: Hairstyle | null;
-    }>({ classic: null, trendy: null });
-
     const handleGetRecommendations = async () => {
         const payload = {
-            age_group: data.age,
-            gender: data.gender,
+            age_group: data.age?.toLowerCase(),
+            gender: data.gender?.toLowerCase(),
             role: data.profession,
             hair_length: data.hairLength,
             hair_type: data.hairType,
-            face_shape: data.faceShapeResult?.face_shape,
+            face_shape: data.faceShapeResult?.face_shape.toLowerCase(),
         };
 
         for (const [key, value] of Object.entries(payload)) {
-            if (!value) {
+            if (key !== "hair_length" && key !== "hair_type" && !value) {
                 toast.error(`Missing value for ${key}`);
                 return;
             }
         }
 
         try {
-            const res = await api.post("/hairstyle", payload);
-            const {
-                recommended_classic_hairstyle,
-                recommended_trendy_hairstyle,
-            } = res.data;
-
-            // Find matching hairstyles from the JSON
-            const classic = hairstyles.find(
-                (style) =>
-                    style.name.toLowerCase() ===
-                    recommended_classic_hairstyle.toLowerCase()
-            );
-            const trendy = hairstyles.find(
-                (style) =>
-                    style.name.toLowerCase() ===
-                    recommended_trendy_hairstyle.toLowerCase()
-            );
-
-            setResults({ classic: classic ?? null, trendy: trendy ?? null });
+            const res = await api.post("/recommend", payload);
+            setResults(res.data);
         } catch (error: any) {
             console.error(error);
             toast.error(
@@ -81,15 +59,16 @@ export default function Recommendations() {
         }
     };
 
-    const Card = ({ hairstyle }: { hairstyle: Hairstyle }) => {
-        console.log(hairstyle);
+    const Card = ({ hairstyle }: { hairstyle: any }) => {
+        let query = encodeURIComponent(`${hairstyle.name} indian hairstyle`);
+        let url = `https://www.google.com/search?tbm=isch&q=${query}`;
         return (
             <div className="bg-white text-black p-4 rounded-xl shadow-md w-full md:w-80">
-                <img src={hairstyle.name.toLowerCase() + ".jpeg"} />
+                {/* <img src={hairstyle.name.toLowerCase() + ".jpeg"} /> */}
                 <h3 className="text-xl font-bold mb-2">{hairstyle.name}</h3>
-                <p className="text-sm mb-2">{hairstyle.description}</p>
+                <p className="text-sm mb-2">{hairstyle.desc}</p>
                 <a
-                    href={hairstyle.url}
+                    href={url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 underline text-sm"
@@ -114,15 +93,14 @@ export default function Recommendations() {
             </button>
 
             {results && (
-                <div className="mt-8 bg-white/10 border border-white/20 rounded p-6 w-full max-w-md text-center">
+                <div className="mt-8 bg-white/10 border border-white/20 rounded p-6 w-full max-w-md md:max-w-2xl text-center">
                     <h2 className="text-xl font-bold mb-3">
                         Your Recommended Hairstyles
                     </h2>
                     <div className="flex flex-col md:flex-row gap-6 mt-10 items-center">
-                        {results.classic && (
-                            <Card hairstyle={results.classic} />
-                        )}
-                        {results.trendy && <Card hairstyle={results.trendy} />}
+                        {results.map((rs) => (
+                            <Card hairstyle={rs} />
+                        ))}
                     </div>
                 </div>
             )}

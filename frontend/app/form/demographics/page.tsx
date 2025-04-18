@@ -20,9 +20,11 @@ export default function Demographics() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-svh px-4 text-white">
-            <div className="md:text-2xl text-lg font-bold mb-2">Step 2</div>
-            <div className="text-xl md:text-4xl font-bold text-center mb-6">
-                Demographics
+            <div className="text-2xl md:text-4xl font-bold text-center">
+                Step 2: Demographics
+            </div>
+            <div className="my-3 text-center text-lg md:text-xl">
+                Enter all required demographics data
             </div>
 
             <form
@@ -44,18 +46,19 @@ export default function Demographics() {
 
                 {/* Profession */}
                 <div className="flex flex-col">
-                    <label className="text-sm font-medium">Role</label>
+                    <label className="text-sm font-medium">Occasion</label>
                     <select
                         value={profession}
                         onChange={(e) => setProfession(e.target.value)}
                         className="p-2 rounded bg-white text-black"
                         required
                     >
-                        <option value="">Select role</option>
-                        <option value="student">Student</option>
+                        <option value="">Select occasion</option>
+                        <option value="formal">Formal</option>
+                        <option value="casual">Casual</option>
                         <option value="creative">Creative</option>
-                        <option value="professional">Professional</option>
-                        <option value="others">Others</option>
+                        <option value="festive">Festive</option>
+                        <option value="sports">Sports</option>
                     </select>
                 </div>
 
