@@ -1,15 +1,24 @@
 "use client";
-import React, { useState, useRef } from "react";
-import api from "../../axios";
-import { toast } from "react-toastify";
+import React, { useRef, useState } from "react";
 import { useFormContext } from "@/app/context/FormContext";
+import { toast } from "react-toastify";
+import api from "@/app/axios";
+import Image from "next/image";
+
+interface FaceShapeResult {
+    face_shape: string;
+    jawline: string;
+    age: string;
+    gender: string;
+    error?: string;
+}
 
 export default function FaceShape() {
-    const [file, setFile] = useState(null as File | null);
+    const [file, setFile] = useState<File | null>(null);
     const [loading, setLoading] = useState(false);
     const [showCamera, setShowCamera] = useState(false);
     const { updateData, goToNextStep } = useFormContext();
-    const [result, setResult] = useState<any>(null);
+    const [result, setResult] = useState<FaceShapeResult | null>(null);
     const videoRef = useRef<HTMLVideoElement>(null);
     const streamRef = useRef<MediaStream | null>(null);
 
@@ -129,9 +138,10 @@ export default function FaceShape() {
                 });
                 console.log(face_shape_response.data);
             }
-        } catch (error: any) {
+        } catch (error: unknown) {
             console.log(error);
-            toast.error(error.message || "Something went wrong");
+            const errorMessage = error instanceof Error ? error.message : "Something went wrong";
+            toast.error(errorMessage);
         }
         setLoading(false);
     };
@@ -202,19 +212,19 @@ export default function FaceShape() {
                 <div className="flex flex-col items-center gap-3">
                     {file && (
                         <div className="relative">
-                            <img
+                            <Image
                                 src={URL.createObjectURL(file)}
                                 className="w-full max-w-[300px] rounded-md"
                                 alt="Preview"
                             />
                             <div className="flex justify-center gap-2 mt-2">
-                                <button
+                                {/* <button
                                     type="button"
                                     onClick={startCamera}
                                     className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
                                 >
                                     Retake
-                                </button>
+                                </button> */}
                                 <button
                                     type="button"
                                     onClick={clearPhoto}

@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 export default function Hero() {
     return (
         <section className="min-h-svh flex items-center px-6 md:px-16 text-white p-8">
@@ -48,7 +49,9 @@ export default function Hero() {
 
                         {/* Image inside the blob */}
                         <div className="absolute inset-8 z-10 rounded-full overflow-hidden animate-float">
-                            <img
+                            <Image
+                                width={500}
+                                height={500}
                                 src="/hero.jpg" // Make sure this file is placed inside your Next.js `public` folder
                                 alt="Hairstyle recommendation"
                                 className="w-full h-full object-cover"

@@ -4,27 +4,23 @@ import { useFormContext } from "@/app/context/FormContext";
 import api from "@/app/axios";
 import { toast } from "react-toastify";
 import Link from "next/link";
-// import hairstyles from "/hairstyles.json";
 
-type Hairstyle = {
-  index: number;
+interface Hairstyle {
   name: string;
-  description: string;
-  type: "Classic" | "Trendy";
-  url: string;
-};
+  desc: string;
+  score?: number;
+}
+
+interface RecommendationResult {
+  name: string;
+  desc: string;
+  score?: number;
+}
 
 export default function Recommendations() {
   const { data } = useFormContext();
-  // const [hairstyles, setHairstyles] = useState<Hairstyle[]>([]);
-  const [results, setResults] = useState<[{}] | null>(null);
-  useEffect(() => {
-    fetch("/hairstyles.json")
-      .then((res) => res.json())
-      .then((data) => {
-        // setHairstyles(data);
-      });
-  }, []);
+  const [results, setResults] = useState<RecommendationResult[] | null>(null);
+
   useEffect(() => {
     if (!data.selfie) {
       window.location.pathname = "/form/faceshape";
@@ -49,33 +45,41 @@ export default function Recommendations() {
     }
 
     try {
-      const res = await api.post("/recommend", payload);
+      const res = await api.post<RecommendationResult[]>("/recommend", payload);
       setResults(res.data);
-    } catch (error: any) {
-      console.error(error);
-      toast.error(
-        error?.response?.data?.detail ??
-          "Something went wrong while fetching recommendations!"
-      );
+    } catch (error: unknown) {
+        const err = error as { response?: { data?: { detail: string } } };
+        console.error(error);
+        toast.error(
+            err?.response?.data?.detail ?? "Something went wrong while fetching recommendations!"
+        );
     }
   };
 
-  const Card = ({ hairstyle }: { hairstyle: any }) => {
-    let query = encodeURIComponent(`${hairstyle.name} indian hairstyle`);
-    let url = `https://www.google.com/search?tbm=isch&q=${query}`;
+  const Card = ({ hairstyle }: { hairstyle: Hairstyle }) => {
+    const query = encodeURIComponent(`${hairstyle.name} indian hairstyle`);
+    const url = `https://www.google.com/search?tbm=isch&q=${query}`;
+    
     return (
       <div className="bg-white text-black p-4 rounded-xl shadow-md w-full md:w-80">
-        {/* <img src={hairstyle.name.toLowerCase() + ".jpeg"} /> */}
         <h3 className="text-xl font-bold mb-2">{hairstyle.name}</h3>
         <p className="text-sm mb-2">{hairstyle.desc}</p>
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 underline text-sm"
-        >
-          View Examples
-        </a>
+        <div className="flex justify-between items-center">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline text-sm"
+          >
+            View Examples
+          </a>
+          <Link 
+            href={`/try-on/${encodeURIComponent(hairstyle.name)}`}
+            className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 text-sm"
+          >
+            Try Now
+          </Link>
+        </div>
       </div>
     );
   };

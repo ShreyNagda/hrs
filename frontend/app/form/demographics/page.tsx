@@ -1,15 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useFormContext } from "@/app/context/FormContext";
 
 export default function Demographics() {
     const { data, updateData, goToNextStep } = useFormContext();
     const [name, setName] = useState(data.name || "");
     const [profession, setProfession] = useState(data.profession || "");
-
-    useEffect(() => {
-        console.log(data);
-    });
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();

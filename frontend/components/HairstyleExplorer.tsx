@@ -13,9 +13,6 @@ type Hairstyle = {
     url: string;
 };
 
-function formatFilename(name: string) {
-    return name.toLowerCase() + ".jpeg";
-}
 
 export default function HairstyleExplorer() {
     const [hairstyles, setHairstyles] = useState<Hairstyle[]>([]);
@@ -69,7 +66,7 @@ export default function HairstyleExplorer() {
 
                 <select
                     value={filterType}
-                    onChange={(e) => setFilterType(e.target.value as any)}
+                    onChange={(e) => setFilterType(e.target.value as "all" | "formal" | "casual" | "festive")}
                     className="px-4 py-2 border border-white rounded bg-black text-white focus:outline-none focus:ring-2 focus:ring-white"
                 >
                     <option value="all">All Types</option>

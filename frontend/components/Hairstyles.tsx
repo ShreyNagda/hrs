@@ -12,9 +12,6 @@ interface Hairstyle {
     url: string;
 }
 
-function formatFilename(name: string) {
-    return name.toLowerCase() + ".jpeg";
-}
 
 export default function RandomHairstyles() {
     const [hairstyles, setHairstyles] = useState<Hairstyle[]>([]);

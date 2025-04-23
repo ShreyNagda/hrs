@@ -1,15 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useFormContext } from "@/app/context/FormContext";
 
 export default function Preferences() {
     const { data, updateData, goToNextStep } = useFormContext();
-
     const [hairLength, setHairLength] = useState(data.hairLength || "");
     const [hairType, setHairType] = useState(data.hairType || "");
-    useEffect(() => {
-        console.log(data);
-    });
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (hairLength !== "" && hairType !== "")
