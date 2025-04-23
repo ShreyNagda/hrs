@@ -4,6 +4,7 @@ import { useFormContext } from "@/app/context/FormContext";
 import { toast } from "react-toastify";
 import api from "@/app/axios";
 import Image from "next/image";
+import axios from "axios";
 
 interface FaceShapeResult {
     face_shape: string;
@@ -21,6 +22,8 @@ export default function FaceShape() {
     const [result, setResult] = useState<FaceShapeResult | null>(null);
     const videoRef = useRef<HTMLVideoElement>(null);
     const streamRef = useRef<MediaStream | null>(null);
+    // next.config.js or a frontend component
+    const API_URL = process.env.NEXT_PUBLIC_API_BASE_URL; // should be 'https://hrs-production.up.railway.app'
 
     const startCamera = async () => {
         setFile(null);
@@ -104,6 +107,8 @@ export default function FaceShape() {
     };
 
     const handleSubmit = async (ev: React.FormEvent<HTMLFormElement>) => {
+        console.log('API_URL:', API_URL); // should be 'onsole.log('API_URL:', API_URL); // should be 'URL_ADDRESS-production.up.railway.app'
+
         ev.preventDefault();
         setLoading(true);
         if (!file) {
@@ -113,7 +118,8 @@ export default function FaceShape() {
         try {
             const formData = new FormData();
             formData.append("file", file);
-            const face_shape_response = await api.post("/faceshape", formData, {
+            console.log()
+            const face_shape_response = await axios.post(`${API_URL}/faceshape`, formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
@@ -213,6 +219,8 @@ export default function FaceShape() {
                     {file && (
                         <div className="relative">
                             <Image
+                            height={300}
+                            width={200}
                                 src={URL.createObjectURL(file)}
                                 className="w-full max-w-[300px] rounded-md"
                                 alt="Preview"
