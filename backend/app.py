@@ -55,7 +55,7 @@ def resize_image(file, size=(200, 300)):
 
 @app.get("/")
 def home():
-    return JSONResponse(content="Hairstyle Recommendation System API v1 working successfully!")
+    return JSONResponse(content="Hairstyle Recommendation System API v2 working successfully!")
 
 @app.post("/faceshape/")
 async def analyze_face_endpoint(file: UploadFile = File(...)):
