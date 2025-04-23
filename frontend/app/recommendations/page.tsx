@@ -16,13 +16,13 @@ type Hairstyle = {
 
 export default function Recommendations() {
   const { data } = useFormContext();
-  const [hairstyles, setHairstyles] = useState<Hairstyle[]>([]);
+  // const [hairstyles, setHairstyles] = useState<Hairstyle[]>([]);
   const [results, setResults] = useState<[{}] | null>(null);
   useEffect(() => {
     fetch("/hairstyles.json")
       .then((res) => res.json())
       .then((data) => {
-        setHairstyles(data);
+        // setHairstyles(data);
       });
   }, []);
   useEffect(() => {

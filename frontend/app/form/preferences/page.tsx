@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useFormContext } from "@/app/context/FormContext";
-import { toast } from "react-toastify";
 
 export default function Preferences() {
     const { data, updateData, goToNextStep } = useFormContext();

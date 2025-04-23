@@ -2,8 +2,6 @@ import AboutSection from "@/components/About";
 import Footer from "@/components/Footer";
 import Hairstyles from "@/components/Hairstyles";
 import Hero from "@/components/Hero";
-import { div } from "framer-motion/client";
-import Image from "next/image";
 
 export default function Home() {
     return (
