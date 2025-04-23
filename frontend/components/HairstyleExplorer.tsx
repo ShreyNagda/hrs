@@ -9,6 +9,7 @@ type Hairstyle = {
     name: string;
     description: string;
     type: "Classic" | "Trendy";
+    work_suitability: string;
     url: string;
 };
 
@@ -20,7 +21,7 @@ export default function HairstyleExplorer() {
     const [hairstyles, setHairstyles] = useState<Hairstyle[]>([]);
     const [filtered, setFiltered] = useState<Hairstyle[]>([]);
     const [search, setSearch] = useState("");
-    const [filterType, setFilterType] = useState<"all" | "Classic" | "Trendy">(
+    const [filterType, setFilterType] = useState<"all" | "formal" | "casual" | "festive">(
         "all"
     );
 
@@ -38,7 +39,7 @@ export default function HairstyleExplorer() {
         const results = hairstyles.filter((style) => {
             const matchesSearch = style.name.toLowerCase().includes(query);
             const matchesType =
-                filterType === "all" || style.type === filterType;
+                filterType === "all" || style.work_suitability.includes(filterType);
             return matchesSearch && matchesType;
         });
 
@@ -46,7 +47,7 @@ export default function HairstyleExplorer() {
     }, [search, filterType, hairstyles]);
 
     return (
-        <section className="min-h-screen bg-gradient-to-b from-blue-900 to-black bg-fixed text-white px-4 py-20 md:px-10">
+        <section className="min-h-screen bg-gradient-to-b from-blue-900 to-black/80 bg-fixed text-white px-4 py-20 md:px-10">
             <div className="flex items-center mb-8 gap-2">
                 <Link
                     href="/"
@@ -72,8 +73,9 @@ export default function HairstyleExplorer() {
                     className="px-4 py-2 border border-white rounded bg-black text-white focus:outline-none focus:ring-2 focus:ring-white"
                 >
                     <option value="all">All Types</option>
-                    <option value="Classic">Classic</option>
-                    <option value="Trendy">Trendy</option>
+                    <option value="formal">Formal</option>
+                    <option value="casual">Casual</option>
+                    <option value="festive">Festive</option>
                 </select>
             </div>
 
@@ -81,13 +83,13 @@ export default function HairstyleExplorer() {
                 {filtered.map((style, index) => (
                     <div
                         key={index}
-                        className="p-5 rounded-lg border border-white bg-black/70 hover:bg-black transition"
+                        className="p-5 rounded-lg bg-black/50 hover:bg-black transition"
                     >
-                        <img
+                        {/* <img
                             src={`/hairstyles/${formatFilename(style.name)}`}
                             alt={style.name}
                             className="w-48 h-48 object-cover object-center rounded mb-4 border border-white"
-                        />
+                        /> */}
                         <h2 className="text-xl font-semibold capitalize">
                             {style.name}
                         </h2>

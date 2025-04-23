@@ -217,7 +217,7 @@
         "gender": "male",
         "hair_length": "medium",
         "hair_type": ["straight", "wavy"],
-        "work_suitability": ["casual", "formal"]
+        "work_suitability": ["casual", "formal", "festive"]
     },
     {
         "name": "Textured Crop",
@@ -237,7 +237,7 @@
         "gender": "male",
         "hair_length": "short",
         "hair_type": ["straight"],
-        "work_suitability": ["formal", "casual"]
+        "work_suitability": ["formal", "casual", "festive"]
     },
     {
         "name": "Brushed Back",
@@ -277,7 +277,7 @@
         "gender": "male",
         "hair_length": "short",
         "hair_type": ["straight", "wavy"],
-        "work_suitability": ["casual", "formal"]
+        "work_suitability": ["casual", "formal", "festive"]
     },
     {
         "name": "Classic Comb Over",
@@ -287,7 +287,7 @@
         "gender": "male",
         "hair_length": "medium",
         "hair_type": ["straight"],
-        "work_suitability": ["formal"]
+        "work_suitability": ["formal", "festive"]
     },
     {
         "name": "Messy Textured Top",

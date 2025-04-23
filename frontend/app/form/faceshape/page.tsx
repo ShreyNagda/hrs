@@ -15,6 +15,7 @@ export default function FaceShape() {
 
     const startCamera = async () => {
         setFile(null);
+        setResult(null);
         setShowCamera(true);
         try {
             const stream = await navigator.mediaDevices.getUserMedia({

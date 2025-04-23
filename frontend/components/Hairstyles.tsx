@@ -29,7 +29,7 @@ export default function RandomHairstyles() {
     }, []);
 
     return (
-        <section className="min-h-svh py-16 px-4 md:px-10 bg-gradient-to-b from-transparent to-pink-300/20 rounded-sm">
+        <section className="min-h-svh py-16 px-4 md:px-10 bg-gradient-to-b from-transparent to-pink-300/20 rounded-sm flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-pink-500 mb-10 text-center">
                 Discover Styles You’ll Love
             </h2>
@@ -43,11 +43,11 @@ export default function RandomHairstyles() {
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                         className="p-6 border border-pink-500 rounded-lg shadow-lg hover:bg-pink-950 transition-colors"
                     >
-                        <img
+                        {/* <img
                             src={`/hairstyles/${formatFilename(style.name)}`}
                             alt={style.name}
                             className="h-40 object-cover rounded-md mb-4 border border-pink-500"
-                        />
+                        /> */}
                         <h3 className="text-xl font-semibold text-pink-400 capitalize mb-2">
                             {style.name}
                         </h3>
