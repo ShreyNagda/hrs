@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { useFormContext } from "@/app/context/FormContext";
 import { toast } from "react-toastify";
-import api from "@/app/axios";
+// import api from "@/app/axios";
 import Image from "next/image";
 import axios from "axios";
 
