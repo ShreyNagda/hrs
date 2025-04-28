@@ -4,6 +4,7 @@ import "./globals.css";
 import { FormProvider } from "./context/FormContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Chatbot from "@/components/ChatBot";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
             >
                 <ToastContainer position="top-right" />
                 <FormProvider>{children}</FormProvider>
+                <Chatbot />
             </body>
         </html>
     );

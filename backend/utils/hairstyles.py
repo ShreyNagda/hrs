@@ -20,9 +20,9 @@ def vectorize_hairstyles(data):
         f[f'gender_{h["gender"]}'] = 5
         f[f'hair_length_{h["hair_length"]}'] = 1
         for ht in h['hair_type']:
-            f[f'hair_type_{ht}'] = 1
+            f[f'hair_type_{ht}'] = 2
         for occ in h.get('work_suitability', []):
-            f[f'occasion_{occ}'] = 1
+            f[f'occasion_{occ}'] = 2
         feature_dicts.append(f)
     vectorizer = DictVectorizer(sparse=False)
     vectors = vectorizer.fit_transform(feature_dicts)
